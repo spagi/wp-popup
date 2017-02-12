@@ -112,17 +112,22 @@ class Popup_Settings {
             'title' => __('Nastaveni', 'popup'),
             'description' => __('Nastaveni popup.', 'popup'),
             'fields' => array(
-               array(
-                    'id'=>'display',
-                    'label'=>'Aktivovat',
-                    'type'=>'checkbox',
-                    
+                array(
+                    'id' => 'display',
+                    'label' => 'Aktivovat',
+                    'type' => 'checkbox',
                 ),
                 array(
-                    'id'=>'display_type',
-                    'label'=>'Typ zobrazeni',
-                    'type'=>'select',
-                  
+                    'id' => 'display_type',
+                    'label' => 'Typ zobrazeni',
+                    'type' => 'select',
+                    'options' => array('1' => 'Pouze jednou', 'x' => 'Pri kazdem nacteni stranky', '1d' => 'Jednou za den', '0' => 'Vyberte moznost'),
+                    'default' => 0
+                ),
+                array(
+                    'id' => 'title',
+                    'label' => __('Nadpis', 'popup'),
+                    'type' => 'text',
                 ),
                 array(
                     'id' => 'main_text',
@@ -131,12 +136,10 @@ class Popup_Settings {
                     'default' => '',
                     'placeholder' => __('Placeholder text for this textarea', 'popup')
                 ),
-               
-                
             )
         );
 
-        
+
 
         $settings = apply_filters($this->parent->_token . '_settings_fields', $settings);
 
