@@ -2,10 +2,10 @@
 /*
  * Plugin Name: PoPUp plugin
  * Version: 1.0
- * Plugin URI: http://www.hughlashbrooke.com/
+ * Plugin URI: http://www.spagi.eu/
  * Description: PopUp plugin
- * Author: Hugh Lashbrooke
- * Author URI: http://www.hughlashbrooke.com/
+ * Author: Jan Strnadel
+ * Author URI: http://www.spagi.eu/
  * Requires at least: 4.0
  * Tested up to: 4.0
  *
@@ -13,7 +13,7 @@
  * Domain Path: /lang/
  *
  * @package WordPress
- * @author Hugh Lashbrooke
+ * @author Jan Strnadel
  * @since 1.0.0
  */
 
